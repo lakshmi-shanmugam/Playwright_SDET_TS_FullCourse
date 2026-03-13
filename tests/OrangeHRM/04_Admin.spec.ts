@@ -21,6 +21,4 @@ test("OrangeHRM Dashboard", async ({ page }) => {
   await expect(page.locator("//label[normalize-space()=' Status']")).toHaveText(
     "Status",
   );
-await 
-
 });
