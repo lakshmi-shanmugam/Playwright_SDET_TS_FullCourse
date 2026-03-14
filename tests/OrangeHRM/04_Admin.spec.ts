@@ -12,8 +12,16 @@ test("OrangeHRM Dashboard", async ({ page }) => {
     has: page.getByText("Username", { exact: true }),
   });
 
-  await expect(systemUsersForm.getByText("Username", { exact: true })).toBeVisible();
-  await expect(systemUsersForm.getByText("User Role", { exact: true })).toBeVisible();
-  await expect(systemUsersForm.getByText("Employee Name", { exact: true })).toBeVisible();
-  await expect(systemUsersForm.getByText("Status", { exact: true })).toBeVisible();
+  await expect(
+    systemUsersForm.getByText("Username", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    systemUsersForm.getByText("User Role", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    systemUsersForm.getByText("Employee Name", { exact: true }),
+  ).toBeVisible();
+  await expect(
+    systemUsersForm.getByText("Status", { exact: true }),
+  ).toBeVisible();
 });
